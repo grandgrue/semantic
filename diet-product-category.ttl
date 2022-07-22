@@ -105,8 +105,8 @@
                                 rdfs:label "Vegan" .
 
 
-###  http://www.grue.ch/diet#Vegatarian
-<http://www.grue.ch/diet#Vegatarian> rdf:type owl:Class ;
+###  http://www.grue.ch/diet#Vegetarian
+<http://www.grue.ch/diet#Vegetarian> rdf:type owl:Class ;
                                      rdfs:subClassOf <http://www.grue.ch/diet#Flexitarian> ;
                                      rdfs:label "Vegetarian" .
 
