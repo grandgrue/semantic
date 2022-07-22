@@ -1,0 +1,119 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.grue.ch/diet#Bevarages
+<http://www.grue.ch/diet#Bevarages> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.grue.ch/diet#Vegan> ,
+                                                    <http://www.grue.ch/product#ProductCategory> ;
+                                    rdfs:comment "Soft drinks, coffees, teas, beers, and ales"^^xsd:string ;
+                                    rdfs:label "Beverages" .
+
+
+###  http://www.grue.ch/diet#Carnivore
+<http://www.grue.ch/diet#Carnivore> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.grue.ch/diet#Flexitarian> ;
+                                    rdfs:label "Carnivore" .
+
+
+###  http://www.grue.ch/diet#Condiments
+<http://www.grue.ch/diet#Condiments> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.grue.ch/diet#Flexitarian> ,
+                                                     <http://www.grue.ch/product#ProductCategory> ;
+                                     rdfs:comment "Sweet and savory sauces, relishes, spreads, and seasonings"@en ;
+                                     rdfs:label "Condiments"@en .
+
+
+###  http://www.grue.ch/diet#Confections
+<http://www.grue.ch/diet#Confections> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ,
+                                                      <http://www.grue.ch/product#ProductCategory> ;
+                                      rdfs:comment "Desserts, candies, and sweet breads"^^xsd:string ;
+                                      rdfs:label "Confections" .
+
+
+###  http://www.grue.ch/diet#Dairy
+<http://www.grue.ch/diet#Dairy> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ,
+                                                <http://www.grue.ch/product#ProductCategory> ;
+                                rdfs:comment "Cheeses"^^xsd:string ;
+                                rdfs:label "Dairy Products" .
+
+
+###  http://www.grue.ch/diet#Diet
+<http://www.grue.ch/diet#Diet> rdf:type owl:Class ;
+                               rdfs:label "Diet"^^xsd:string .
+
+
+###  http://www.grue.ch/diet#Flexitarian
+<http://www.grue.ch/diet#Flexitarian> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.grue.ch/diet#Diet> ;
+                                      rdfs:label "Flexitarian" .
+
+
+###  http://www.grue.ch/diet#Grains
+<http://www.grue.ch/diet#Grains> rdf:type owl:Class ;
+                                 rdfs:subClassOf <http://www.grue.ch/diet#Vegan> ,
+                                                 <http://www.grue.ch/product#ProductCategory> ;
+                                 rdfs:comment "Breads, crackers, pasta, and cereal"^^xsd:string ;
+                                 rdfs:label "Grains/Cereals" .
+
+
+###  http://www.grue.ch/diet#Meat
+<http://www.grue.ch/diet#Meat> rdf:type owl:Class ;
+                               rdfs:subClassOf <http://www.grue.ch/diet#Carnivore> ,
+                                               <http://www.grue.ch/product#ProductCategory> ;
+                               rdfs:comment "Prepared meats"^^xsd:string ;
+                               rdfs:label "Meat/Poultry" .
+
+
+###  http://www.grue.ch/diet#Pescatarian
+<http://www.grue.ch/diet#Pescatarian> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.grue.ch/diet#Carnivore> ;
+                                      rdfs:label "Pescatarian" .
+
+
+###  http://www.grue.ch/diet#Produce
+<http://www.grue.ch/diet#Produce> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.grue.ch/diet#Vegan> ,
+                                                  <http://www.grue.ch/product#ProductCategory> ;
+                                  rdfs:comment "Dried fruit and bean curd"^^xsd:string ;
+                                  rdfs:label "Produce" .
+
+
+###  http://www.grue.ch/diet#Seafood
+<http://www.grue.ch/diet#Seafood> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://www.grue.ch/diet#Pescatarian> ,
+                                                  <http://www.grue.ch/product#ProductCategory> ;
+                                  rdfs:comment "Seaweed and fish"^^xsd:string ;
+                                  rdfs:label "Seafood" .
+
+
+###  http://www.grue.ch/diet#Vegan
+<http://www.grue.ch/diet#Vegan> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ;
+                                rdfs:label "Vegan" .
+
+
+###  http://www.grue.ch/diet#Vegatarian
+<http://www.grue.ch/diet#Vegatarian> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.grue.ch/diet#Flexitarian> ;
+                                     rdfs:label "Vegetarian" .
+
+
+###  http://www.grue.ch/product#ProductCategory
+<http://www.grue.ch/product#ProductCategory> rdf:type owl:Class ;
+                                             rdfs:label "Product Category" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
