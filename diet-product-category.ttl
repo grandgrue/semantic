@@ -36,7 +36,7 @@
 
 ###  http://www.grue.ch/diet#Confections
 <http://www.grue.ch/diet#Confections> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ,
+                                      rdfs:subClassOf <http://www.grue.ch/diet#Vegetarian> ,
                                                       <http://www.grue.ch/product#ProductCategory> ;
                                       rdfs:comment "Desserts, candies, and sweet breads"^^xsd:string ;
                                       rdfs:label "Confections" .
@@ -44,7 +44,7 @@
 
 ###  http://www.grue.ch/diet#Dairy
 <http://www.grue.ch/diet#Dairy> rdf:type owl:Class ;
-                                rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ,
+                                rdfs:subClassOf <http://www.grue.ch/diet#Vegetarian> ,
                                                 <http://www.grue.ch/product#ProductCategory> ;
                                 rdfs:comment "Cheeses"^^xsd:string ;
                                 rdfs:label "Dairy Products" .
