@@ -101,7 +101,7 @@
 
 ###  http://www.grue.ch/diet#Vegan
 <http://www.grue.ch/diet#Vegan> rdf:type owl:Class ;
-                                rdfs:subClassOf <http://www.grue.ch/diet#Vegatarian> ;
+                                rdfs:subClassOf <http://www.grue.ch/diet#Vegetarian> ;
                                 rdfs:label "Vegan" .
 
 
